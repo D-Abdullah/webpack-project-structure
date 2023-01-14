@@ -5,5 +5,11 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Abdullah WebPack First Project
+
+        //- using pug-plugin the source style must be loaded in Pug via require()
+        link(href=require('./style.sass') rel='stylesheet')
+
+        //- using pug-plugin the source script must be loaded in Pug via require()
+        script(src=require('./main.ts') defer='defer')
     body 
         h1 Abdullah Khaled Hello World !! 
